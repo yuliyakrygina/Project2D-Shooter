@@ -10,7 +10,7 @@ public class Target : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>(); //find and store in variable gameManager
+		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>(); 
 
 		Destroy(gameObject, 2f);
     }
