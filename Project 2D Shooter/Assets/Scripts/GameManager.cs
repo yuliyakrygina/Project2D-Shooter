@@ -7,15 +7,17 @@ public class GameManager : MonoBehaviour
 
 	public GameObject target;
 
+	int score = 0;
+
     void Start()
     {
-        
+		InvokeRepeating("Spawn", 1f, 1f);
     }
 
     // Update is called once per frame
     void Update()
 	{
-		
+
     }
 
 	void Spawn()
@@ -25,7 +27,12 @@ public class GameManager : MonoBehaviour
 
 		Vector3 RandomPosition = new Vector3(RandomX, RandomY, 0);
 
-		//add transform position
 		Instantiate(target, RandomPosition, Quaternion.identity);
+	}
+
+	public void IncrementScore()
+	{
+		score++;
+		print(score);
 	}
 }
