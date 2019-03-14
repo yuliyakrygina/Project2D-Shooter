@@ -5,15 +5,10 @@ using UnityEngine.UI; //to use Text variable.
 
 public class GameManager : MonoBehaviour
 {
-
 	public GameObject target;
-
 	public Text scoreText;
-
 	public GameObject winText;
-
 	bool win = false;
-
 	int score = 0;
 
     void Start()
